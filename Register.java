@@ -85,6 +85,10 @@ public class Register extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String name = textField.getText();
 				System.out.print(name);
+				if(name.isEmpty())
+				{
+					System.out.print("error need a name!");
+				}
 							
 			}
 			
@@ -99,6 +103,10 @@ public class Register extends JFrame {
 		{
 			public void actionPerformed(ActionEvent e) {
 				String email = textField_1.getText();
+				if(email.isEmpty())
+				{
+					System.out.print("Error need an email!");
+				}
 							
 			}
 			
@@ -115,6 +123,10 @@ public class Register extends JFrame {
 		{
 			public void actionPerformed(ActionEvent e) {
 				String pNumber = textField_2.getText();
+				if (pNumber.isEmpty())
+				{
+					System.out.print("Error need a phone number!");
+				}
 							
 			}
 			
@@ -123,12 +135,11 @@ public class Register extends JFrame {
 		JButton btnNewButton = new JButton("Sign Up!");
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
+			public void mouseClicked(MouseEvent a) {
 				updatePane = new JPanel();
 				updatePane.add(name);
 				updatePane.add(email);
 				updatePane.add(phone);
-				
 			}
 		});
 		btnNewButton.setBounds(167, 227, 89, 23);
