@@ -1,4 +1,4 @@
-[CS-270-1] Generated GUI created
+[CS-270-8] Color Schemes and Text Sizes
 //Minor Comment
 
 package ia;
